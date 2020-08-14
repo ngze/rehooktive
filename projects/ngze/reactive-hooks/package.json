@@ -1,0 +1,28 @@
+{
+  "name": "@ngze/reactive-hooks",
+  "version": "1.0.0",
+  "peerDependencies": {
+    "@angular/common": "^10.0.9",
+    "@angular/core": "^10.0.9"
+  },
+  "dependencies": {
+    "tslib": "^2.0.0"
+  },
+  "keywords": [
+    "angular",
+    "angular 2",
+    "reactive-hooks"
+  ],
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "bugs": {
+    "url": "https://github.com/ngze/reactive-hooks/issue"
+  },
+  "homepage": "https://github.com/ngze/reactive-hooks#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ngze/reactive-hooks"
+  }
+}
