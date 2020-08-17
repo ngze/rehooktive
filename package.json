@@ -11,11 +11,11 @@
     "contributors:add": "all-contributors add",
     "hooks:pre-commit": "node hooks/pre-commit.js",
     "commit": "git-cz",
-    "release:first": "npm run release -- --first-release",
+    "release:first": "yarn run release -- --first-release",
     "build:lib": "ng build @ngze/reactive-hooks",
     "test:lib": "ng test @ngze/reactive-hooks",
     "release": "cd projects/ngze/reactive-hooks && standard-version --infile ../../../CHANGELOG.md",
-    "test:lib:headless": "cross-env CI=true npm run test:lib"
+    "test:lib:headless": "cross-env CI=true yarn run test:lib"
   },
   "private": true,
   "dependencies": {
@@ -79,8 +79,8 @@
   "husky": {
     "hooks": {
       "commit-msg": "commitlint -e $GIT_PARAMS",
-      "pre-commit": "npm run hooks:pre-commit && lint-staged",
-      "pre-push": "npm run test:lib:headless"
+      "pre-commit": "yarn run hooks:pre-commit && lint-staged",
+      "pre-push": "yarn run test:lib:headless"
     }
   }
 }
