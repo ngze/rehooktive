@@ -33,11 +33,11 @@ Accusantium aliquid corporis cupiditate dolores eum exercitationem illo iure lab
 
 ### NPM
 
-`npm install @ngze/reactive-hooks --save-dev`
+`npm install @ngze/reactive-hooks
 
 ### Yarn
 
-`yarn add @ngze/reactive-hooks --dev`
+`yarn add @ngze/reactive-hooks
 
 ## Usage
 
@@ -60,9 +60,14 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->
 <!-- markdownlint-disable -->
-<!-- markdownlint-enable -->
-<!-- prettier-ignore-end -->
+<table>
+  <tr>
+    <td align="center"><a href="https://il.linkedin.com/in/zeev-katz"><img src="https://avatars0.githubusercontent.com/u/21024245?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Zeev Katz</b></sub></a><br /><a href="https://github.com/@ngze/reactive-hooks/commits?author=ZeevKatz" title="Code">💻</a> <a href="https://github.com/@ngze/reactive-hooks/commits?author=ZeevKatz" title="Documentation">📖</a> <a href="#ideas-ZeevKatz" title="Ideas, Planning, & Feedback">🤔</a> <a href="#maintenance-ZeevKatz" title="Maintenance">🚧</a></td>
+  </tr>
+</table>
 
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
