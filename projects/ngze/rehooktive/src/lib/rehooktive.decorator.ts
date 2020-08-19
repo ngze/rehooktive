@@ -72,13 +72,13 @@ const addHookMethodOnTargetIfMissing = (target, config: HookConfig) => {
       target.constructor.prototype[config.methodName] = () => {};
     } else {
       throw new Error(
-        `${target.constructor.name} is using ReactiveHook for ${config.methodName} but it wasn't implemented.`
+        `${target.constructor.name} is using Rehooktive for ${config.methodName} but it wasn't implemented.`
       );
     }
   }
 };
 
-export const ReactiveHook = (hook: Hook): PropertyDecorator => {
+export const Rehooktive = (hook: Hook): PropertyDecorator => {
   return (target, key: string | symbol) => {
     const config = HooksConfigs[hook];
     const destroyConfig = HooksConfigs[Hook.OnDestroy];

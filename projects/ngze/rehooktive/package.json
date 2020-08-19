@@ -1,5 +1,5 @@
 {
-  "name": "@ngze/reactive-hooks",
+  "name": "@ngze/rehooktive",
   "version": "1.0.0",
   "peerDependencies": {
     "@angular/common": "^10.0.9",
@@ -11,18 +11,18 @@
   "keywords": [
     "angular",
     "angular 2",
-    "reactive-hooks"
+    "rehooktive"
   ],
   "license": "MIT",
   "publishConfig": {
     "access": "public"
   },
   "bugs": {
-    "url": "https://github.com/ngze/reactive-hooks/issue"
+    "url": "https://github.com/ngze/rehooktive/issue"
   },
-  "homepage": "https://github.com/ngze/reactive-hooks#readme",
+  "homepage": "https://github.com/ngze/rehooktive#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ngze/reactive-hooks"
+    "url": "https://github.com/ngze/rehooktive"
   }
 }

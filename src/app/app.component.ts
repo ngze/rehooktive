@@ -1,5 +1,5 @@
 import { Component, HostListener } from '@angular/core';
-import { ReactiveHook, Hook } from '@ngze/reactive-hooks';
+import { Rehooktive, Hook } from '@ngze/rehooktive';
 import { Observable } from 'rxjs';
 import { mapTo, scan } from 'rxjs/operators';
 
@@ -18,7 +18,7 @@ import { mapTo, scan } from 'rxjs/operators';
   ],
 })
 export class AppComponent {
-  @ReactiveHook(Hook.DoCheck)
+  @Rehooktive(Hook.DoCheck)
   private readonly doCheck$: Observable<void>;
 
   readonly numberOfChecks$ = this.doCheck$.pipe(

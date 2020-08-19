@@ -53,7 +53,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- markdownlint-disable -->
 <table>
   <tr>
-    <td align="center"><a href="https://il.linkedin.com/in/zeev-katz"><img src="https://avatars0.githubusercontent.com/u/21024245?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Zeev Katz</b></sub></a><br /><a href="https://github.com/@ngze/reactive-hooks/commits?author=ZeevKatz" title="Code"> 💻 </a> <a href="https://github.com/@ngze/reactive-hooks/commits?author=ZeevKatz" title="Documentation"> 📖 </a> <a href="#ideas-ZeevKatz" title="Ideas, Planning, & Feedback"> 🤔 </a> <a href="#maintenance-ZeevKatz" title="Maintenance"> 🚧 </a></td>
+    <td align="center"><a href="https://il.linkedin.com/in/zeev-katz"><img src="https://avatars0.githubusercontent.com/u/21024245?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Zeev Katz</b></sub></a><br /><a href="https://github.com/@ngze/rehooktive/commits?author=ZeevKatz" title="Code"> 💻 </a> <a href="https://github.com/@ngze/rehooktive/commits?author=ZeevKatz" title="Documentation"> 📖 </a> <a href="#ideas-ZeevKatz" title="Ideas, Planning, & Feedback"> 🤔 </a> <a href="#maintenance-ZeevKatz" title="Maintenance"> 🚧 </a></td>
   </tr>
 </table>
 

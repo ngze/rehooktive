@@ -1,6 +1,6 @@
-# Contributing to Reactive-hooks
+# Contributing to Rehooktive
 
-🙏 We would ❤️ for you to contribute to Reactive-hooks and help make it even better than it is today!
+🙏 We would ❤️ for you to contribute to Rehooktive and help make it even better than it is today!
 
 # Developing
 
@@ -40,7 +40,7 @@ To ensure consistency throughout the source code, keep these rules in mind as yo
 
 We have very precise rules over how our git commit messages can be formatted. This leads to **more
 readable messages** that are easy to follow when looking through the **project history**. But also,
-we use the git commit messages to **generate the Reactive-hooks changelog**.
+we use the git commit messages to **generate the Rehooktive changelog**.
 
 ### Commit Message Format
 
