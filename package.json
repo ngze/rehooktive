@@ -1,5 +1,5 @@
 {
-  "name": "reactive-hooks",
+  "name": "rehooktive",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -12,9 +12,9 @@
     "hooks:pre-commit": "node hooks/pre-commit.js",
     "commit": "git-cz",
     "release:first": "yarn run release -- --first-release",
-    "build:lib": "ng build @ngze/reactive-hooks",
-    "test:lib": "ng test @ngze/reactive-hooks",
-    "release": "cd projects/ngze/reactive-hooks && standard-version --infile ../../../CHANGELOG.md",
+    "build:lib": "ng build @ngze/rehooktive",
+    "test:lib": "ng test @ngze/rehooktive",
+    "release": "cd projects/ngze/rehooktive && standard-version --infile ../../../CHANGELOG.md",
     "test:lib:headless": "cross-env CI=true yarn run test:lib"
   },
   "private": true,

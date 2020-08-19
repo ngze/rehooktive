@@ -1,3 +1,3 @@
-describe('ReactiveHook', () => {
+describe('Rehooktive', () => {
   it('should work', () => {});
 });
