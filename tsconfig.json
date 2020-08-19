@@ -14,10 +14,10 @@
       "path": "./tsconfig.spec.json"
     },
     {
-      "path": "./projects/ngze/reactive-hooks/tsconfig.lib.json"
+      "path": "./projects/ngze/rehooktive/tsconfig.lib.json"
     },
     {
-      "path": "./projects/ngze/reactive-hooks/tsconfig.spec.json"
+      "path": "./projects/ngze/rehooktive/tsconfig.spec.json"
     }
   ]
 }

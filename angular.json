@@ -6,7 +6,7 @@
   },
   "newProjectRoot": "projects",
   "projects": {
-    "reactive-hooks": {
+    "rehooktive": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -20,7 +20,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/reactive-hooks",
+            "outputPath": "dist/rehooktive",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -64,18 +64,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "reactive-hooks:build"
+            "browserTarget": "rehooktive:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "reactive-hooks:build:production"
+              "browserTarget": "rehooktive:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "reactive-hooks:build"
+            "browserTarget": "rehooktive:build"
           }
         },
         "test": {
@@ -101,54 +101,51 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "reactive-hooks:serve"
+            "devServerTarget": "rehooktive:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "reactive-hooks:serve:production"
+              "devServerTarget": "rehooktive:serve:production"
             }
           }
         }
       }
     },
-    "@ngze/reactive-hooks": {
+    "@ngze/rehooktive": {
       "projectType": "library",
-      "root": "projects/ngze/reactive-hooks",
-      "sourceRoot": "projects/ngze/reactive-hooks/src",
+      "root": "projects/ngze/rehooktive",
+      "sourceRoot": "projects/ngze/rehooktive/src",
       "prefix": "lib",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-ng-packagr:build",
           "options": {
-            "tsConfig": "projects/ngze/reactive-hooks/tsconfig.lib.json",
-            "project": "projects/ngze/reactive-hooks/ng-package.json"
+            "tsConfig": "projects/ngze/rehooktive/tsconfig.lib.json",
+            "project": "projects/ngze/rehooktive/ng-package.json"
           },
           "configurations": {
             "production": {
-              "tsConfig": "projects/ngze/reactive-hooks/tsconfig.lib.prod.json"
+              "tsConfig": "projects/ngze/rehooktive/tsconfig.lib.prod.json"
             }
           }
         },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "projects/ngze/reactive-hooks/src/test.ts",
-            "tsConfig": "projects/ngze/reactive-hooks/tsconfig.spec.json",
-            "karmaConfig": "projects/ngze/reactive-hooks/karma.conf.js"
+            "main": "projects/ngze/rehooktive/src/test.ts",
+            "tsConfig": "projects/ngze/rehooktive/tsconfig.spec.json",
+            "karmaConfig": "projects/ngze/rehooktive/karma.conf.js"
           }
         },
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
-            "tsConfig": [
-              "projects/ngze/reactive-hooks/tsconfig.lib.json",
-              "projects/ngze/reactive-hooks/tsconfig.spec.json"
-            ],
+            "tsConfig": ["projects/ngze/rehooktive/tsconfig.lib.json", "projects/ngze/rehooktive/tsconfig.spec.json"],
             "exclude": ["**/node_modules/**"]
           }
         }
       }
     }
   },
-  "defaultProject": "reactive-hooks"
+  "defaultProject": "rehooktive"
 }

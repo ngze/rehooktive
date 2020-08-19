@@ -13,7 +13,7 @@
     "module": "es2020",
     "lib": ["es2018", "dom"],
     "paths": {
-      "@ngze/reactive-hooks": ["projects/ngze/reactive-hooks/src/public-api.ts"]
+      "@ngze/rehooktive": ["projects/ngze/rehooktive/src/public-api.ts"]
     }
   }
 }
