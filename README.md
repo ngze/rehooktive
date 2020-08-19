@@ -1,5 +1,7 @@
+<br />
+
 <p align="center">
- <img width="20%" height="20%" src="./logo.svg">
+ <img width="25%" height="25%" src="./logo.svg">
 </p>
 
 <br />
@@ -8,50 +10,39 @@
 [![commitizen](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg?style=flat-square)]()
 [![PRs](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)]()
 [![styled with prettier](https://img.shields.io/badge/styled_with-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
-[![All Contributors](https://img.shields.io/badge/all_contributors-0-orange.svg?style=flat-square)](#contributors-)
-[![ngneat](https://img.shields.io/badge/@-ngneat-383636?style=flat-square&labelColor=8f68d4)](https://github.com/ngneat/)
+[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
 [![spectator](https://img.shields.io/badge/tested%20with-spectator-2196F3.svg?style=flat-square)]()
 
-> The Library Slogan
+> Angular lifecycle hooks are now reacting!
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid assumenda atque blanditiis cum delectus eligendi ipsam iste iure, maxime modi molestiae nihil obcaecati odit officiis pariatur quibusdam suscipit temporibus unde.
-Accusantium aliquid corporis cupiditate dolores eum exercitationem illo iure laborum minus nihil numquam odit officiis possimus quas quasi quos similique, temporibus veritatis? Exercitationem, iure magni nulla quo sapiente soluta. Esse?
+**Rehooktive** is a lightweight library that lets you have the power of reactive programing over Angular lifecycle hooks.
+You can use it to profit the abilities of RxJS and have fully reactive support in your directives/components code.  
 
 ## Features
 
-- ✅ One
-- ✅ Two
-- ✅ Three
-
-## Table of Contents
-
-- [Installation](#installation)
-- [Usage](#usage)
-- [FAQ](#faq)
+✅&nbsp;&nbsp;Support all lifecycle hooks
+<br />
+✅&nbsp;&nbsp;Fully decorative solution
+<br />
+✅&nbsp;&nbsp;Ivy support
 
 ## Installation
 
-### NPM
-
-`npm install @ngze/reactive-hooks
-
-### Yarn
-
-`yarn add @ngze/reactive-hooks
-
-## Usage
-
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid assumenda atque blanditiis cum delectus eligendi ipsam iste iure, maxime modi molestiae nihil obcaecati odit officiis pariatur quibusdam suscipit temporibus unde.
-
-```ts
-function helloWorld() {}
+```
+ng add @ngze/rehooktive
 ```
 
-## FAQ
+### Ivy
 
-## How to ...
+```ts
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid assumenda atque blanditiis cum delectus eligendi ips
+```
+
+### View Engine
+
+```ts
+
+```
 
 ## Contributors ✨
 
@@ -62,7 +53,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- markdownlint-disable -->
 <table>
   <tr>
-    <td align="center"><a href="https://il.linkedin.com/in/zeev-katz"><img src="https://avatars0.githubusercontent.com/u/21024245?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Zeev Katz</b></sub></a><br /><a href="https://github.com/@ngze/reactive-hooks/commits?author=ZeevKatz" title="Code">💻</a> <a href="https://github.com/@ngze/reactive-hooks/commits?author=ZeevKatz" title="Documentation">📖</a> <a href="#ideas-ZeevKatz" title="Ideas, Planning, & Feedback">🤔</a> <a href="#maintenance-ZeevKatz" title="Maintenance">🚧</a></td>
+    <td align="center"><a href="https://il.linkedin.com/in/zeev-katz"><img src="https://avatars0.githubusercontent.com/u/21024245?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Zeev Katz</b></sub></a><br /><a href="https://github.com/@ngze/reactive-hooks/commits?author=ZeevKatz" title="Code"> 💻 </a> <a href="https://github.com/@ngze/reactive-hooks/commits?author=ZeevKatz" title="Documentation"> 📖 </a> <a href="#ideas-ZeevKatz" title="Ideas, Planning, & Feedback"> 🤔 </a> <a href="#maintenance-ZeevKatz" title="Maintenance"> 🚧 </a></td>
   </tr>
 </table>
 
