@@ -78,7 +78,7 @@ const addHookMethodOnTargetIfMissing = (target, config: HookConfig) => {
   }
 };
 
-export const Rehooktive = (hook: Hook): PropertyDecorator => {
+export function Rehooktive(hook: Hook): PropertyDecorator {
   return (target, key: string | symbol) => {
     const config = HooksConfigs[hook];
     const destroyConfig = HooksConfigs[Hook.OnDestroy];
@@ -91,4 +91,4 @@ export const Rehooktive = (hook: Hook): PropertyDecorator => {
     setupHookMethodOnTarget(target, config);
     setupOnDestroyOnTarget(target, config, destroyConfig);
   };
-};
+}
