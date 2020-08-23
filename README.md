@@ -29,19 +29,58 @@ You can use it to profit the abilities of RxJS and have fully reactive support i
 ## Installation
 
 ```
+# Using ng
 ng add @ngze/rehooktive
+
+# Using yarn
+yarn add @ngze/rehooktive
+
+# Using npm
+npm i @ngze/rehooktive
 ```
 
-### Ivy
+### Usage
+
+Here is a usage example for reactive `OnChanges` hook:
 
 ```ts
+export class SimpleComponent {
 
+  @Rehooktive(Hook.OnChanges) // <-- Or any other hook exposed via 'Hook' enum.
+  readonly onChanges$: Observable<SimpleChanges>;
+
+  @Input()
+  readonly value: number;
+
+  readonly value$ = this.onChanges$
+    .pipe(
+      map(() => this.value),
+      distinctUntilChanged()
+    );
+}
 ```
 
-### View Engine
+### Without Ivy
+
+In case that you are not using **Ivy**, all you need to carry out is implementing the `OnChanges` hook (or any other hook you are using):
 
 ```ts
+export class SimpleComponent implements OnChanges {
 
+  @Rehooktive(Hook.OnChanges)
+  readonly onChanges$: Observable<SimpleChanges>;
+
+  @Input()
+  readonly value: number;
+
+  readonly value$ = this.onChanges$
+    .pipe(
+      map(() => this.value),
+      distinctUntilChanged()
+    );
+
+  ngOnChanges() {} // <-- Add empty method for 'OnChanges' hook.
+}
 ```
 
 ## Contributors ✨
