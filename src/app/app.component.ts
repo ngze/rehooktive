@@ -5,7 +5,7 @@ import { mapTo, scan } from 'rxjs/operators';
 
 @Component({
   selector: 'app-root',
-  template: ` <strong>Number of checks: {{ numberOfChecks$ | async }}</strong> `,
+  template: '<strong>Number of checks: {{ numberOfChecks$ | async }}</strong>',
   styles: [
     `
       :host {
@@ -27,6 +27,5 @@ export class AppComponent {
   );
 
   @HostListener('mousemove')
-  // tslint:disable-next-line:typedef
   onMousemove() {}
 }
