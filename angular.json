@@ -91,9 +91,10 @@
           }
         },
         "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
+          "builder": "@angular-eslint/builder:lint",
           "options": {
-            "tsConfig": ["tsconfig.app.json", "tsconfig.spec.json", "e2e/tsconfig.json"],
+            "eslintConfig": ".eslintrc",
+            "tsConfig": ["tsconfig.app.json", "tsconfig.spec.json"],
             "exclude": ["**/node_modules/**"]
           }
         },
@@ -138,8 +139,9 @@
           }
         },
         "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
+          "builder": "@angular-eslint/builder:lint",
           "options": {
+            "eslintConfig": "projects/ngze/rehooktive/.eslintrc",
             "tsConfig": ["projects/ngze/rehooktive/tsconfig.lib.json", "projects/ngze/rehooktive/tsconfig.spec.json"],
             "exclude": ["**/node_modules/**"]
           }
