@@ -1,5 +1,5 @@
 import { Observable, Subject } from 'rxjs';
-import { ɵivyEnabled as ivyEnabled } from '@angular/core';
+import { Type, ɵivyEnabled as ivyEnabled } from '@angular/core';
 
 import { HooksConfigs } from './hooks-configs';
 import { Hook } from './hook.enum';
@@ -9,7 +9,7 @@ export const isFunction = (value: unknown): value is () => {} => {
   return typeof value === 'function';
 };
 
-const setupHookSubjectOnTarget = (target, config: HookConfig) => {
+const setupHookSubjectOnTarget = (target: Type<unknown>, config: HookConfig) => {
   const subjectStoreProperty = '_'.concat(config.subjectPropertyName.toString());
 
   Object.defineProperties(target, {
@@ -21,13 +21,13 @@ const setupHookSubjectOnTarget = (target, config: HookConfig) => {
   });
 };
 
-const completeSubjectOnInstance = (instance, config: HookConfig) => {
+const completeSubjectOnInstance = (instance: object, config: HookConfig) => {
   instance[config.subjectPropertyName].next();
   instance[config.subjectPropertyName].complete();
   instance[config.subjectPropertyName] = null;
 };
 
-const setupHookMethodOnTarget = (target, config: HookConfig) => {
+const setupHookMethodOnTarget = (target: Type<unknown>, config: HookConfig) => {
   const originalMethod = target[config.methodName];
 
   Object.defineProperties(target, {
@@ -40,7 +40,7 @@ const setupHookMethodOnTarget = (target, config: HookConfig) => {
   });
 };
 
-const setupHookObservableOnTargetProperty = (target, key: string | symbol, config: HookConfig) => {
+const setupHookObservableOnTargetProperty = (target: Type<unknown>, key: string | symbol, config: HookConfig) => {
   Object.defineProperties(target, {
     [key]: {
       enumerable: true,
@@ -52,7 +52,7 @@ const setupHookObservableOnTargetProperty = (target, key: string | symbol, confi
   });
 };
 
-const setupOnDestroyOnTarget = (target, config: HookConfig, destroyConfig: HookConfig) => {
+const setupOnDestroyOnTarget = (target: Type<unknown>, config: HookConfig, destroyConfig: HookConfig) => {
   const originalOnDestroyMethod = target[destroyConfig.methodName];
 
   Object.defineProperties(target, {
@@ -66,7 +66,7 @@ const setupOnDestroyOnTarget = (target, config: HookConfig, destroyConfig: HookC
   });
 };
 
-const addHookMethodOnTargetIfMissing = (target, config: HookConfig) => {
+const addHookMethodOnTargetIfMissing = (target: Type<unknown>, config: HookConfig) => {
   if (!isFunction(target[config.methodName])) {
     if (ivyEnabled) {
       target.constructor.prototype[config.methodName] = () => {};
@@ -78,8 +78,11 @@ const addHookMethodOnTargetIfMissing = (target, config: HookConfig) => {
   }
 };
 
+/**
+ * Rehooktive is a property decorator that makes property to emits when the given type of lifecycle hook occurs.
+ */
 export function Rehooktive(hook: Hook): PropertyDecorator {
-  return (target, key: string | symbol) => {
+  return (target: Type<unknown>, key: string | symbol) => {
     const config = HooksConfigs[hook];
     const destroyConfig = HooksConfigs[Hook.OnDestroy];
 
