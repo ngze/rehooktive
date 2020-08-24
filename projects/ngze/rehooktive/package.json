@@ -9,9 +9,11 @@
     "tslib": "^2.0.0"
   },
   "keywords": [
-    "angular",
-    "angular 2",
-    "rehooktive"
+    "rehooktive",
+    "reactive-hooks",
+    "lifecycle-hooks",
+    "rxjs",
+    "angular"
   ],
   "license": "MIT",
   "publishConfig": {
