@@ -17,25 +17,6 @@
     "release": "cd projects/ngze/rehooktive && standard-version --infile ../../../CHANGELOG.md",
     "test:lib:headless": "cross-env CI=true yarn run test:lib"
   },
-  "keywords": [
-    "rehooktive",
-    "reactive-hooks",
-    "lifecycle-hooks",
-    "rxjs",
-    "angular"
-  ],
-  "publishConfig": {
-    "access": "public"
-  },
-  "bugs": {
-    "url": "https://github.com/ngze/rehooktive/issues"
-  },
-  "homepage": "https://github.com/ngze/rehooktive#readme",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/ngze/rehooktive"
-  },
-  "license": "MIT",
   "dependencies": {
     "@angular/animations": "~10.0.9",
     "@angular/common": "~10.0.9",
