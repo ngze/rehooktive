@@ -7,26 +7,23 @@ import { HookConfig } from './hook-config.interface';
 import { addHookMethodOnTargetIfMissing, completeSubjectOnInstance } from './internals';
 
 const setupHookSubjectOnTarget = (target: Type<unknown>, subjectPropertyName: symbol) => {
-  const subjectStoreProperty = '_'.concat(subjectPropertyName.toString());
+  const isSubjectExists = target[subjectPropertyName];
 
-  Object.defineProperties(target, {
-    [subjectPropertyName]: {
-      get(): Subject<unknown> {
-        return (this[subjectStoreProperty] = this[subjectStoreProperty] || new Subject());
-      },
-    },
-  });
+  if (!isSubjectExists) {
+    Object.defineProperty(target, subjectPropertyName, {
+      writable: true,
+      value: new Subject(),
+    });
+  }
 };
 
 const setupHookMethodOnTarget = (target: Type<unknown>, methodName: string, subjectPropertyName: symbol) => {
   const originalMethod = target[methodName];
 
-  Object.defineProperties(target, {
-    [methodName]: {
-      value(...args: unknown[]): void {
-        this[subjectPropertyName].next(args[0]);
-        originalMethod.apply(this, ...args);
-      },
+  Object.defineProperty(target, methodName, {
+    value(...args: unknown[]) {
+      this[subjectPropertyName].next(args[0]);
+      return originalMethod.apply(this, ...args);
     },
   });
 };
@@ -36,13 +33,11 @@ const setupHookObservableOnTargetProperty = (
   key: string | symbol,
   subjectPropertyName: symbol
 ) => {
-  Object.defineProperties(target, {
-    [key]: {
-      enumerable: true,
-      configurable: true,
-      get(): Observable<unknown> {
-        return this[subjectPropertyName].pipe();
-      },
+  Object.defineProperty(target, key, {
+    enumerable: true,
+    configurable: true,
+    get(): Observable<unknown> {
+      return this[subjectPropertyName].pipe();
     },
   });
 };
@@ -50,13 +45,10 @@ const setupHookObservableOnTargetProperty = (
 const setupOnDestroyOnTarget = (target: Type<unknown>, config: HookConfig, destroyConfig: HookConfig) => {
   const originalOnDestroyMethod = target[destroyConfig.methodName];
 
-  Object.defineProperties(target, {
-    [destroyConfig.methodName]: {
-      value(): void {
-        completeSubjectOnInstance(this, config.subjectPropertyName);
-        completeSubjectOnInstance(this, destroyConfig.subjectPropertyName);
-        originalOnDestroyMethod.apply(this);
-      },
+  Object.defineProperty(target, destroyConfig.methodName, {
+    value() {
+      completeSubjectOnInstance(this, config.subjectPropertyName);
+      originalOnDestroyMethod.apply(this);
     },
   });
 };
