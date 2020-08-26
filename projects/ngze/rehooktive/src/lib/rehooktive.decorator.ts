@@ -6,6 +6,9 @@ import { Hook } from './hook.enum';
 import { HookConfig } from './hook-config.interface';
 import { addHookMethodOnTargetIfMissing, completeSubjectOnInstance } from './internals';
 
+/**
+ * Adds subject on the provided target that is used to emit on lifecycle hook calls.
+ */
 const setupHookSubjectOnTarget = (target: Type<unknown>, subjectPropertyName: symbol) => {
   const isSubjectExists = target[subjectPropertyName];
 
@@ -17,6 +20,9 @@ const setupHookSubjectOnTarget = (target: Type<unknown>, subjectPropertyName: sy
   }
 };
 
+/**
+ * Adds functionality to the provided target that emits on each lifecycle hook call.
+ */
 const setupHookMethodOnTarget = (target: Type<unknown>, methodName: string, subjectPropertyName: symbol) => {
   const originalMethod = target[methodName];
 
@@ -28,6 +34,9 @@ const setupHookMethodOnTarget = (target: Type<unknown>, methodName: string, subj
   });
 };
 
+/**
+ * Assigns the lifecycle hook observable to the given key on the provided target.
+ */
 const setupHookObservableOnTargetProperty = (
   target: Type<unknown>,
   key: string | symbol,
@@ -42,6 +51,9 @@ const setupHookObservableOnTargetProperty = (
   });
 };
 
+/**
+ * Adds functionality to the provided target that completes the lifecycle hook subject on destroy.
+ */
 const setupOnDestroyOnTarget = (target: Type<unknown>, config: HookConfig, destroyConfig: HookConfig) => {
   const originalOnDestroyMethod = target[destroyConfig.methodName];
 
@@ -54,7 +66,7 @@ const setupOnDestroyOnTarget = (target: Type<unknown>, config: HookConfig, destr
 };
 
 /**
- * Rehooktive is a property decorator that makes property to emits when the given type of lifecycle hook occurs.
+ * Rehooktive is a property decorator that makes a property to emit when the given type of lifecycle hook occurs.
  */
 export function Rehooktive(hook: Hook): PropertyDecorator {
   return (target: Type<unknown>, key: string | symbol) => {
