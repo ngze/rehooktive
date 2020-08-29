@@ -30,7 +30,7 @@ describe('Rehooktive decorator', () => {
         @Rehooktive(Hook.OnInit)
         readonly onInit$: Observable<void>;
       }
-    }).toThrow(`Test is using Rehooktive for ngOnInit but it wasn't implemented.`);
+    }).toThrow('Test is using Rehooktive for ngOnInit but it wasn\'t implemented.');
   });
 
   test('is completing subject on destroy', () => {
