@@ -1,5 +1,7 @@
 module.exports = {
   name: '@ngze/rehooktive',
-  coverageDirectory: '../../../coverage/projects/ngze/rehooktive',
-  collectCoverageFrom: ['src/**/*.{ts,js}'],
+  coverageDirectory: 'coverage',
+  collectCoverage: true,
+  coverageReporters: ['html', 'json'],
+  collectCoverageFrom: ['projects/ngze/rehooktive/src/lib/**/*.{ts,js}'],
 };
