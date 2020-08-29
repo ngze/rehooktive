@@ -11,7 +11,7 @@
 [![PRs](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)]()
 [![styled with prettier](https://img.shields.io/badge/styled_with-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 [![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
-[![spectator](https://img.shields.io/badge/tested%20with-spectator-2196F3.svg?style=flat-square)]()
+[![codecov](https://codecov.io/gh/ngze/rehooktive/branch/develop/graph/badge.svg)](https://codecov.io/gh/ngze/rehooktive)
 
 > Makes Angular lifecycle hooks being reactive! 🚀
 
