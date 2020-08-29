@@ -6,17 +6,18 @@
 
 <br />
 
+[![codecov](https://codecov.io/gh/ngze/rehooktive/branch/develop/graph/badge.svg)](https://codecov.io/gh/ngze/rehooktive)
 [![MIT](https://img.shields.io/packagist/l/doctrine/orm.svg?style=flat-square)]()
 [![commitizen](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg?style=flat-square)]()
 [![PRs](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)]()
 [![styled with prettier](https://img.shields.io/badge/styled_with-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 [![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
-[![codecov](https://codecov.io/gh/ngze/rehooktive/branch/develop/graph/badge.svg)](https://codecov.io/gh/ngze/rehooktive)
 
 > Makes Angular lifecycle hooks being reactive! 🚀
 
-**Rehooktive** is a lightweight library that lets you have the power of reactive programing over Angular lifecycle hooks.
-You can use it to profit the abilities of RxJS and have fully reactive support in your directives/components code.  
+**Rehooktive** is a lightweight library that lets you have the power of reactive programming over Angular lifecycle hooks.
+<br />
+Use it to take advantage of RxJS and have fully reactive support in your directives/components code.  
 
 ## Features
 
@@ -41,7 +42,7 @@ npm i @ngze/rehooktive
 
 ### Usage
 
-Here is a usage example for reactive `OnChanges` hook:
+Here is a usage example for reactive `OnChanges`:
 
 ```ts
 @Component({...})
@@ -63,7 +64,7 @@ export class SimpleComponent {
 
 ### Without Ivy
 
-In case that you are not using **Ivy**, all you need to carry out is implementing the `OnChanges` hook (or any other hook you are using):
+In case that you're not using **Ivy**, all you need to carry out is implementing `OnChanges` (or any other hook you are using):
 
 ```ts
 @Component({...})
