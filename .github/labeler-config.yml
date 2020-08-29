@@ -1,0 +1,9 @@
+'📦 dependencies': yarn.lock
+'🔨 build': package.json
+'☁️ ci': .github/**/*
+'👮 linting':
+  - .eslintrc
+  - /**/*.eslintrc
+'🔬 testing':
+  - projects/**/*.spec.ts
+  - src/**/*.spec.ts
