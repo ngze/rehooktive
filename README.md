@@ -44,6 +44,7 @@ npm i @ngze/rehooktive
 Here is a usage example for reactive `OnChanges` hook:
 
 ```ts
+@Component({...})
 export class SimpleComponent {
 
   @Rehooktive(Hook.OnChanges) // <-- Or any other hook exposed via 'Hook' enum.
@@ -65,6 +66,7 @@ export class SimpleComponent {
 In case that you are not using **Ivy**, all you need to carry out is implementing the `OnChanges` hook (or any other hook you are using):
 
 ```ts
+@Component({...})
 export class SimpleComponent implements OnChanges {
 
   @Rehooktive(Hook.OnChanges)
