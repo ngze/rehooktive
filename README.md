@@ -15,8 +15,8 @@
 
 > Makes Angular lifecycle hooks being reactive! 🚀
 
-**Rehooktive** is a lightweight library that lets you have the power of reactive programing over Angular lifecycle hooks.
-You can use it to profit the abilities of RxJS and have fully reactive support in your directives/components code.  
+**Rehooktive** is a lightweight library that lets you have the power of reactive programming over Angular lifecycle hooks.
+Use it to take advantage of RxJS and have fully reactive support in your directives/components code.  
 
 ## Features
 
@@ -41,7 +41,7 @@ npm i @ngze/rehooktive
 
 ### Usage
 
-Here is a usage example for reactive `OnChanges` hook:
+Here is a usage example for reactive `OnChanges`:
 
 ```ts
 @Component({...})
@@ -63,7 +63,7 @@ export class SimpleComponent {
 
 ### Without Ivy
 
-In case that you are not using **Ivy**, all you need to carry out is implementing the `OnChanges` hook (or any other hook you are using):
+In case that you're not using **Ivy**, all you need to carry out is implementing `OnChanges` (or any other hook you are using):
 
 ```ts
 @Component({...})
