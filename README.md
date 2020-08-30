@@ -13,11 +13,11 @@
 [![styled with prettier](https://img.shields.io/badge/styled_with-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 [![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
 
-> Makes Angular lifecycle hooks being reactive! 🚀
+> Reactivating Angular lifecycle hooks! 🚀
 
 **Rehooktive** is a lightweight library that lets you have the power of reactive programming over Angular lifecycle hooks.
 <br />
-Use it to take advantage of RxJS and have fully reactive support in your directives/components code.  
+Use it to take advantage of RxJS and have a full reactive support in your directives/components code.  
 
 ## Features
 
