@@ -1,33 +1,39 @@
 {
   "name": "@ngze/rehooktive",
   "version": "1.0.0",
-  "peerDependencies": {
-    "@angular/common": "^10.0.9",
-    "@angular/core": "^10.0.9"
-  },
-  "dependencies": {
-    "tslib": "^2.0.0"
-  },
-  "keywords": [
-    "rehooktive",
-    "reactive-hooks",
-    "angular",
-    "angular-lifecycle-hooks",
-    "lifecycle-hooks",
-    "rxjs",
-    "reactive",
-    "reactive-programming"
-  ],
+  "description": "Reactivating Angular lifecycle hooks! 🚀",
   "license": "MIT",
+  "sideEffects": false,
+  "homepage": "https://github.com/ngze/rehooktive#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ngze/rehooktive"
+  },
   "publishConfig": {
     "access": "public"
   },
   "bugs": {
     "url": "https://github.com/ngze/rehooktive/issue"
   },
-  "homepage": "https://github.com/ngze/rehooktive#readme",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/ngze/rehooktive"
+  "maintainers": [
+    "Zeev Katz"
+  ],
+  "keywords": [
+    "Rehooktive",
+    "Reactive hooks",
+    "Angular",
+    "Angular lifecycle hooks",
+    "Lifecycle hooks",
+    "RxJS lifecycle hooks",
+    "Reactive",
+    "Reactive programming"
+  ],
+  "peerDependencies": {
+    "@angular/common": "^10.0.9",
+    "@angular/core": "^10.0.9",
+    "rxjs": ">=6.4.0"
+  },
+  "dependencies": {
+    "tslib": "^2.0.0"
   }
 }
