@@ -11,9 +11,12 @@
   "keywords": [
     "rehooktive",
     "reactive-hooks",
+    "angular",
+    "angular-lifecycle-hooks",
     "lifecycle-hooks",
     "rxjs",
-    "angular"
+    "reactive",
+    "reactive-programming"
   ],
   "license": "MIT",
   "publishConfig": {
